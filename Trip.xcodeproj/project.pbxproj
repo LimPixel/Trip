@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60E691A2620334E00A2FB1D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E69192620334E00A2FB1D /* Profile.swift */; };
 		E628AEAA261FF38F0013BE75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AEA9261FF38F0013BE75 /* AppDelegate.swift */; };
 		E628AEAC261FF38F0013BE75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AEAB261FF38F0013BE75 /* SceneDelegate.swift */; };
 		E628AEAE261FF38F0013BE75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AEAD261FF38F0013BE75 /* ContentView.swift */; };
 		E628AEB0261FF3910013BE75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E628AEAF261FF3910013BE75 /* Assets.xcassets */; };
 		E628AEB3261FF3910013BE75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E628AEB2261FF3910013BE75 /* Preview Assets.xcassets */; };
 		E628AEB6261FF3910013BE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E628AEB4261FF3910013BE75 /* LaunchScreen.storyboard */; };
+		E628AEC4261FF6F10013BE75 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AEC3261FF6F10013BE75 /* TripModel.swift */; };
+		E628AEC8261FF70C0013BE75 /* DataDummny.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AEC7261FF70C0013BE75 /* DataDummny.swift */; };
+		E628AECB261FFCE20013BE75 /* TripList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AECA261FFCE20013BE75 /* TripList.swift */; };
+		E628AED1261FFFA80013BE75 /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AED0261FFFA80013BE75 /* TripDetail.swift */; };
+		E628AED5262001960013BE75 /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E628AED4262001960013BE75 /* TripRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E60E69192620334E00A2FB1D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E628AEA6261FF38F0013BE75 /* Trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E628AEA9261FF38F0013BE75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E628AEAB261FF38F0013BE75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		E628AEB2261FF3910013BE75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E628AEB5261FF3910013BE75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E628AEB7261FF3910013BE75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E628AEC3261FF6F10013BE75 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		E628AEC7261FF70C0013BE75 /* DataDummny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDummny.swift; sourceTree = "<group>"; };
+		E628AECA261FFCE20013BE75 /* TripList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripList.swift; sourceTree = "<group>"; };
+		E628AED0261FFFA80013BE75 /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
+		E628AED4262001960013BE75 /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,9 @@
 		E628AEA8261FF38F0013BE75 /* Trip */ = {
 			isa = PBXGroup;
 			children = (
-				E628AEA9261FF38F0013BE75 /* AppDelegate.swift */,
-				E628AEAB261FF38F0013BE75 /* SceneDelegate.swift */,
-				E628AEAD261FF38F0013BE75 /* ContentView.swift */,
+				E628AEC2261FF6D90013BE75 /* MODEL */,
+				E628AEBE261FF3B70013BE75 /*  Base Trip */,
+				E628AEC0261FF3D00013BE75 /* View */,
 				E628AEAF261FF3910013BE75 /* Assets.xcassets */,
 				E628AEB4261FF3910013BE75 /* LaunchScreen.storyboard */,
 				E628AEB7261FF3910013BE75 /* Info.plist */,
@@ -73,6 +85,36 @@
 				E628AEB2261FF3910013BE75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E628AEBE261FF3B70013BE75 /*  Base Trip */ = {
+			isa = PBXGroup;
+			children = (
+				E628AEA9261FF38F0013BE75 /* AppDelegate.swift */,
+				E628AEAB261FF38F0013BE75 /* SceneDelegate.swift */,
+			);
+			path = " Base Trip";
+			sourceTree = "<group>";
+		};
+		E628AEC0261FF3D00013BE75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E628AEAD261FF38F0013BE75 /* ContentView.swift */,
+				E628AED0261FFFA80013BE75 /* TripDetail.swift */,
+				E628AECA261FFCE20013BE75 /* TripList.swift */,
+				E628AED4262001960013BE75 /* TripRow.swift */,
+				E60E69192620334E00A2FB1D /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E628AEC2261FF6D90013BE75 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				E628AEC3261FF6F10013BE75 /* TripModel.swift */,
+				E628AEC7261FF70C0013BE75 /* DataDummny.swift */,
+			);
+			path = MODEL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E628AECB261FFCE20013BE75 /* TripList.swift in Sources */,
 				E628AEAA261FF38F0013BE75 /* AppDelegate.swift in Sources */,
 				E628AEAC261FF38F0013BE75 /* SceneDelegate.swift in Sources */,
+				E628AEC8261FF70C0013BE75 /* DataDummny.swift in Sources */,
+				E628AEC4261FF6F10013BE75 /* TripModel.swift in Sources */,
+				E628AED1261FFFA80013BE75 /* TripDetail.swift in Sources */,
 				E628AEAE261FF38F0013BE75 /* ContentView.swift in Sources */,
+				E60E691A2620334E00A2FB1D /* Profile.swift in Sources */,
+				E628AED5262001960013BE75 /* TripRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
